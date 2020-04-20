@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     #local
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
+    'crispy_forms',
 
 ]
 
@@ -80,14 +81,10 @@ WSGI_APPLICATION = 'red_innovar.wsgi.application'
 
 DATABASES = {
     'default': {    
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'redinnovar',
-            'USER': 'postgres',
-            'PASSWORD': 'postgres',
-            'HOST': 'localhost',
-            'PORT': 5432
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+
 }
 
 
