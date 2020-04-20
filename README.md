@@ -18,12 +18,14 @@
 
 # Como correr el proyecto
 Tenes que tener instalado pipenv:
-https://pipenv-es.readthedocs.io/es/latest/
-```sudo apt install pipenv``` --> UBUNTU
 
+- Ubuntu:
+```sudo apt install pipenv``` 
+- Mac: 
 ```brew install pipenv``` --> MAC
 
 en la carpeta donde hiciste el clone:
 
-```pipenv shell
+```pipenv install
+pipenv shell
 python manage.py runserver```
