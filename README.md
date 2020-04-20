@@ -16,3 +16,13 @@
 - texto
 - estilos diseños, fotos?
 
+# Como correr el proyecto
+Tenes que tener instalado pipenv:
+https://pipenv-es.readthedocs.io/es/latest/
+```sudo apt install pipenv``` --> UBUNTU
+```brew install pipenv``` --> MAC
+
+en la carpeta donde hiciste el clone:
+
+```pipenv shell
+python manage.py runserver```
