@@ -24,5 +24,5 @@ https://pipenv-es.readthedocs.io/es/latest/
 
 en la carpeta donde hiciste el clone:
 
-```pipenv shell
+```pipenv shell```
 python manage.py runserver```
